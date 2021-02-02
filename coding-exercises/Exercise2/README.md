@@ -5,4 +5,4 @@ In this exercise I encountered problems such as:
 
 Which I successfully overcame and added to my skillset!
 
-See my work [here](https://AdrienVen.github.io/cdv-student/coding-exercises/Exercise2/index.html).
+See my work [here](https://adrienven.github.io/cdv-student/coding-exercises/Exercise2/index.html).
