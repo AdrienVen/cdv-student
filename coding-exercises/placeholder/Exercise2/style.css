@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.label{
+    margin-left: 6.5%;
+    text-align: center;
+    width: 12%;
+    float: left;
+}
+
+#topText{
+    text-align: center;
+}
+
+#labels{
+    height: 110px;
+}
+
+#b_canvas{
+    margin-top: -50px;
+}
