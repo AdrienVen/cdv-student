@@ -15,7 +15,7 @@ function gotData(inputData) {
 
 let viz = d3.select("#container-div").append("svg")
     .attr("width",window.innerWidth)
-    .attr("height", window.innerHeight)
+    .attr("height", window.innerHeight*.8)
     .attr("id","viz");
 
 function incrementX (datapoint){
@@ -25,7 +25,7 @@ function incrementX (datapoint){
 }
 
 function reset(){
-    yPos = 50;
+    yPos = 0;
     currDay = 0;
 }
 
