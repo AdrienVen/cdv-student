@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.numeral{
+    float: left;
+    margin-right: 150px;
+    margin-left: 55px;
+}
+
+#topText{
+    text-align: center;
+}
+
+image:hover{
+    transform: translateY(-100px);
+    transition: transform 2s;
+}
+
+image{
+    transition: transform 1s;
+}
