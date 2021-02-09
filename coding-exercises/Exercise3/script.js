@@ -1,6 +1,8 @@
-d3.json("earwormsData.JSON", gotData);
+d3.json("earwormsData.JSON").then(gotData);
+console.log("working");
 
 function gotData(inputData) {
+    console.log("running");
     viz.selectAll("empty").data(inputData).enter()
         .append("image")
         .attr("x", incrementX)
