@@ -1,0 +1,12 @@
+Adrien Ventugol
+
+agv261
+
+Pr. L. Eckert
+
+Critical Data & Visualization
+
+02/19/2021
+
+What struck me the most while listening to Virginia Eubanks’ discussion of her work Automating Inequality was the notion that entities such as governments, companies or organizations might be consciously using flawed algorithms as shields to justify their unfair discriminatory practices. What is worrying however, is how little “targets” can do in the face of these automated systems. To the best of my knowledge, there is no law or regulation protecting them from the negative effects of being targeted by a system X,Y or Z. Since the services using these systems are accessed on a voluntary basis, the organizations or entities who own them can shrug off any wrongful targeting as a “technical glitch”, thus avoiding all legal responsibility. Having so little chances of being indicted for those “glitches”, it is entirely up to the entity whether and how they compensate the people who suffered from the mistake. While it is not completely explicit, the author explains that in her case, this type of technical error cost her close to 70 thousand dollars. Even worse, had she not inquired herself as to why she had been targeted, it is very likely that the owners of the system would have never let her know. This is not exclusive to the service she was using (private health insurance), but is also a common occurrence in many of the services that deal with money/resources in general.
+Think online marketplaces, money transfer services etc… It is in their interest to have an algorithm which weeds out as many “bad users” (i.e. users using the service to aid or engage in illegal activities) as possible. Even if this algorithm generates an unacceptably high number of false positives, that is to say unjustly targets “good users”, it would still prove less costly than facing legal sanctions for not finding a bad user. On the other hand, services that rely on giving people access to resources and money (health insurance, loans, food stamps etc...) have it in their best interest that the least number of people actually get to use those services. Every person actually using the service represents a loss in capital for the owners. Which is why reducing the number of false positives is not a priority in those algorithms: they are profitable. As the reader can see the design of these algorithms is fundamentally economic, with the social aspects and impacts often completely disregarded.
