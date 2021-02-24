@@ -13,11 +13,23 @@ body{
     text-align: center;
 }
 
+#music{
+    transform: scale(.03);
+}
+
+#cross{
+    transform: scale(.1);
+}
+
 .groups:hover{
-    transform: translateY(-98px);
-    transition: transform 2s;
+    transform-origin: 25% 25%;
+    transform: scale(10);
+    transform-box: fill-box;
+    transition: transform 1s;
 }
 
 .groups{
+    transform-origin: 25% 25%;
     transition: transform 1s;
+    transform-box: fill-box;
 }

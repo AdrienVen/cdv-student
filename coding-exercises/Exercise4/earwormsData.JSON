@@ -68,7 +68,7 @@
     "title": "Crew - GoldLink",
     "genre": "Hip Hop",
     "sangIt": "Yes",
-    "whatIWasDoing": "Daydreaming",
+    "whatIWasDoing": "Thinking",
     "arturl": "https://i.scdn.co/image/ab67616d0000b2737bcd3cd54e8399ae38cc6e64"
   },
   {
@@ -76,7 +76,7 @@
     "title": "Empire State of Mind - Jay-Z",
     "genre": "Hip Hop",
     "sangIt": "No",
-    "whatIWasDoing": "Daydreaming",
+    "whatIWasDoing": "Thinking",
     "arturl": "https://i.scdn.co/image/ab67616d0000b273fec1b815bb3c50a64a90fd10"
   },
   {
@@ -84,7 +84,7 @@
     "title": "Hall of Fame - The Script",
     "genre": "Pop",
     "sangIt": "Yes",
-    "whatIWasDoing": "Daydreaming",
+    "whatIWasDoing": "Thinking",
     "arturl": "https://i.scdn.co/image/ab67616d0000b2732e3049fef96abebf336b7366"
   },
   {
@@ -94,6 +94,125 @@
     "sangIt": "Yes",
     "whatIWasDoing": "Working",
     "arturl": "https://i.scdn.co/image/ab67616d0000b27312a76d1b13ef07188f7dfbc9"
+  },
+  {
+    "timestamp": "2021-02-09T23:18:08.504Z",
+    "title": "Loyal (East Cost Version)",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Relaxing"
+  },
+  {
+    "timestamp": "2021-02-10T09:30:54.608Z",
+    "title": "The Hills - The Weeknd",
+    "genre": "Pop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-10T22:15:48.706Z",
+    "title": "If I Were A Boy - Beyoncé",
+    "genre": "Pop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Relaxing"
+  },
+  {
+    "timestamp": "2021-02-10T22:19:52.976Z",
+    "title": "ブルーバード - Ikimonigakari",
+    "genre": "Pop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Relaxing"
+  },
+  {
+    "timestamp": "2021-02-11T11:35:03.531Z",
+    "title": "Ipséité - Bonus Track - Damso",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Thinking"
+  },
+  {
+    "timestamp": "2021-02-11T16:06:45.711Z",
+    "title": "Besoin de personne - Doums",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-12T13:08:15.748Z",
+    "title": "Ciel Noir - Nekfeu",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Thinking"
+  },
+  {
+    "timestamp": "2021-02-18T14:11:55.346Z",
+    "title": "Be Like That - Kane Brown",
+    "genre": "Pop",
+    "sangIt": "No",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-18T22:13:56.237Z",
+    "title": "Watchubi - Le Nine",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Doing chores"
+  },
+  {
+    "timestamp": "2021-02-19T15:38:11.693Z",
+    "title": "Mon âme - Nekfeu",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-20T16:10:52.138Z",
+    "title": "Flyday Chinatown - Yasuha",
+    "genre": "Disco",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-22T15:13:39.670Z",
+    "title": "Everything's Gonna Be Alright - Bob Marley",
+    "genre": "Reggae",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Doing chores"
+  },
+  {
+    "timestamp": "2021-02-22T15:21:18.886Z",
+    "title": "Free From Desire - GALA",
+    "genre": "Disco",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-22T16:20:22.738Z",
+    "title": "For The Night - Pop Smoke",
+    "genre": "Hip Hop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Relaxing"
+  },
+  {
+    "timestamp": "2021-02-22T18:49:48.016Z",
+    "title": "I Took a Pill in Ibiza - Mike Posner",
+    "genre": "Pop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Relaxing"
+  },
+  {
+    "timestamp": "2021-02-22T19:46:07.023Z",
+    "title": "Save Your Tears - The Weeknd",
+    "genre": "Pop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
+  },
+  {
+    "timestamp": "2021-02-23T14:54:38.546Z",
+    "title": "Get Lucky (feat. Pharrel Williams) - Daft Punk",
+    "genre": "Pop",
+    "sangIt": "Yes",
+    "whatIWasDoing": "Working"
   },
   {
     "timestamp": "2021-02-09T10:52:03.000Z",

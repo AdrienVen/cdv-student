@@ -5,6 +5,7 @@
     <title> Adrien - Ex-3</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
 <div id="topText">
@@ -12,10 +13,19 @@
     <h2>Earworm Library (Ongoing!) </h2>
 </div>
 <div id="container-div">
-    <div id="days">
-        <h1 class="numeral">Day I </h1>
-        <h1 class="numeral"> II </h1>
-    </div>
+    <svg width="0" height="0">
+        <defs>
+            <g id="music" fill="white">
+                <polygon points="56 36 124 24 124 116 144 116 144 0 36 20 36 136 56 136"/>
+                <path d="M56,136 C56,149.254 43.469,160 28,160 C12.531,160 0,149.254 0,136 C0,122.746 12.531,112 28,112 C43.469,112 56,122.746 56,136 Z"/>
+                <path d="M144,116 C144,129.254 131.469,140 116,140 C100.531,140 88,129.254 88,116 C88,102.746 100.531,92 116,92 C131.469,92 144,102.746 144,116 Z"/>
+            </g>
+            <g id="cross" fill="red">
+                <line x1="10" y1="10" x2="50" y2="50" stroke="red" stroke-width="10" />
+                <line x1="50" y1="10" x2="10" y2="50" stroke="red" stroke-width="10" />
+            </g>
+        </defs>
+    </svg>
 
 </div>
 
