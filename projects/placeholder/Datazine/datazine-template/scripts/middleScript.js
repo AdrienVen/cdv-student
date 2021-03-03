@@ -70,7 +70,7 @@ function gotData(inputData) {
 
     groupByGenre(redGroup)
     groupByActivity(greenGroup)
-    //groupBySinging(blueGroup)
+    groupBySinging(blueGroup)
 }
 
 function groupByGenre(group){
@@ -198,6 +198,58 @@ function groupByActivity(group){
 
 }
 
+function groupBySinging(group){
+    function randomX(datapoint) {
+        switch (datapoint.sangIt){
+            case "Yes":
+                var min = Math.ceil(1700);
+                var max = Math.floor(1900);
+                return Math.floor(Math.random() * (max - min + 1)) + min
+            case "No":
+                var min = Math.ceil(2000);
+                var max = Math.floor(2400);
+                return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+    }
+
+    function placeX(datapoint){
+        var result = randomX(datapoint);
+        xs.push(result)
+        return result;
+    }
+
+    function reset(){
+        iX=60;
+        iY=60;
+    }
+
+    var genres = group.append("circle")
+        .attr("fill", mapGenre)
+        .attr("cx", placeX)
+        .attr("cy", placeY)
+        .attr("r", 12)
+        .attr("stroke", "black")
+        .attr("stroke-width", "1px")
+    reset()
+
+    var circles = group.append("circle")
+        .attr("cx", placeActivityX)
+        .attr("cy", placeActivityY)
+        .attr("r", 10)
+        .attr("fill", "transparent")
+        .attr("stroke", mapActivity)
+        .attr("stroke-width", 1)
+        .attr("center")
+
+    reset()
+    var sang = group.append("use")
+        .attr("xlink:href",getSangIt)
+        .attr("x", placeSangX)
+        .attr("y", placeSangY)
+        .attr("stroke", "black")
+
+}
+
 function mapGenre(datapoint){
     switch (datapoint.genre){
         case "Rock":
@@ -232,7 +284,7 @@ let iY = 0;
 
 function placeY(){
     let min = Math.ceil(50);
-    let max = Math.abs(Math.cos(Math.PI/4000 * xs[iX])*350);
+    let max = Math.abs(300);
     iX+=1
     let result = Math.floor(Math.random() * (max - min + 1)) + min
     ys.push(result)
