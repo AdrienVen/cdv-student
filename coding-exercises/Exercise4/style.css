@@ -21,15 +21,14 @@ body{
     transform: scale(.1);
 }
 
-.groups:hover{
+.groups{
     transform-origin: 25% 25%;
-    transform: scale(10);
+    transform: scale(2);
     transform-box: fill-box;
     transition: transform 1s;
 }
 
-.groups{
+.lines:hover{
     transform-origin: 25% 25%;
     transition: transform 1s;
-    transform-box: fill-box;
 }

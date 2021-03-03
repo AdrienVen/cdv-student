@@ -1,18 +1,23 @@
-d3.json("earwormsData.JSON").then(gotData);
+let viz = d3.select("#container-div").append("svg")
+    .attr("width",window.innerWidth)
+    .attr("height", window.innerHeight)
+    .attr("id","viz");
 
-const URL = "https://accounts.spotify.com/api/token";
-const params = {"client_id" : "24894c42f78f4460a980085f20ece0b1", "client_secret": "ce4e111e0f1e4052a114f88de38b1552","grant_type" : "client_credentials"};
-axios.post(URL,params).then(data=>console.log(data)).catch(err=>console.log(err));
+d3.json("earwormsData.JSON").then(gotData);
 
 function gotData(inputData) {
 
-    var groups = viz.selectAll("empty").data(inputData).enter()
-        .append("g")
-        .attr("fill", mapGenre)
+    var spaces = viz.selectAll("empty").data(inputData).enter()
+    var groups = spaces.append("g")
         .attr("stroke", "black")
         .attr("class", "groups")
 
-    var genres = groups.append("circle")
+    populateGroup(groups)
+}
+
+function populateGroup(group){
+    var genres = group.append("circle")
+        .attr("fill", mapGenre)
         .attr("cx", placeX)
         .attr("cy", placeY)
         .attr("r", 12)
@@ -20,35 +25,23 @@ function gotData(inputData) {
         .attr("stroke-width", "1px")
     reset()
 
-    var circles = groups.append("circle")
+    var circles = group.append("circle")
         .attr("cx", placeActivityX)
         .attr("cy", placeActivityY)
         .attr("r", 5)
         .attr("fill", "transparent")
         .attr("stroke", mapActivity)
         .attr("stroke-width", "1px")
-
-   reset()
-    var images = groups.append("image")
-        .attr("x", placeImageX)
-        .attr("y", placeImageY)
-        .attr("width", 15)
-        .attr("height",15)
-        .attr("xlink:href", getImgUrl);
+        .attr("center")
 
     reset()
-    var sang = groups.append("use")
+    var sang = group.append("use")
         .attr("xlink:href",getSangIt)
         .attr("x", placeSangX)
         .attr("y", placeSangY)
         .attr("stroke", "black")
 
 }
-
-let viz = d3.select("#container-div").append("svg")
-    .attr("width",window.innerWidth)
-    .attr("height", window.innerHeight)
-    .attr("id","viz");
 
 function mapGenre(datapoint){
     switch (datapoint.genre){
@@ -81,10 +74,16 @@ let xs = [];
 let ys = [];
 let iX = 0;
 let iY = 0;
-function placeX(){
+
+function randomX() {
+    let result;
     let min = Math.ceil(70);
     let max = Math.floor(1250);
-    let result = Math.floor(Math.random() * (max - min + 1)) + min
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+function placeX(){
+    var result = randomX();
     xs.push(result)
     return result;
 }
@@ -111,18 +110,6 @@ function placeActivityY(datapoint){
     return ogY-7;
 }
 
-function placeImageX () {
-    var ogX = xs[iX];
-    iX+=1;
-    return ogX-7;
-}
-
-function placeImageY(){
-    var ogY = ys[iY];
-    iY+=1
-    return ogY-7;
-}
-
 function placeSangX () {
     var ogX = xs[iX];
     iX+=1;
@@ -138,11 +125,6 @@ function placeSangY(){
 function reset(){
     iX=0;
     iY=0;
-}
-
-function getImgUrl (datapoint){
-    return datapoint.arturl;
-    //return json.tracks.items[0].album.images[0].url;
 }
 
 function getSangIt(datapoint){
