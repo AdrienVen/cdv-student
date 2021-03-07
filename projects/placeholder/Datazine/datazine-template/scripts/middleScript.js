@@ -6,7 +6,6 @@ let viz = d3.select("#container").append("svg")
     .attr("height","inherit")
     .style("background-color","black")
 let defs = d3.select("#container").append("svg").attr("width",0).attr("height",0);
-
 createUses()
 
 function createUses(){
@@ -43,21 +42,21 @@ d3.json("./assets/earwormsData.JSON").then(gotData);
 
 let redHead = viz.append("g").attr("class","genreGroup");
 redHead.append("image")
-    .attr("xlink:href","./assets/head-r.jpg")
+    .attr("xlink:href","./assets/left-head.png")
     .attr("height",600)
     .attr("y",300)
     .attr("x",200)
 
 let greenHead = viz.append("g").attr("class","activityGroup");
 greenHead.append("image")
-    .attr("xlink:href","./assets/head-g.jpg")
-    .attr("height",600)
-    .attr("y",300)
+    .attr("xlink:href","./assets/middle-head.png")
+    .attr("height",700)
+    .attr("y", 225)
     .attr("x",1000)
 
 let blueHead = viz.append("g").attr("class","activityGroup");
 blueHead.append("image")
-    .attr("xlink:href","./assets/head-b.jpg")
+    .attr("xlink:href","./assets/right-head.png")
     .attr("height",600)
     .attr("y",300)
     .attr("x",1800)
@@ -77,21 +76,21 @@ function groupByGenre(group){
     function randomX(datapoint) {
         switch (datapoint.genre){
             case "Rock":
-                var min = Math.ceil(50);
-                var max = Math.floor(110);
+                var min = Math.ceil(20);
+                var max = Math.floor(70);
                 return Math.floor(Math.random() * (max - min + 1)) + min
 
             case "Pop":
-                var min = Math.ceil(160);
-                var max = Math.floor(270);
+                var min = Math.ceil(200);
+                var max = Math.floor(250);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "Hip Hop":
                 var min = Math.ceil(320);
                 var max = Math.floor(430);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "Reggae":
-                var min = Math.ceil(480);
-                var max = Math.floor(590);
+                var min = Math.ceil(530);
+                var max = Math.floor(570);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "Disco":
                 var min = Math.ceil(640);
@@ -99,6 +98,7 @@ function groupByGenre(group){
                 return Math.floor(Math.random() * (max - min + 1)) + min
         }
     }
+
 
     function placeX(datapoint){
         var result = randomX(datapoint);
@@ -111,13 +111,22 @@ function groupByGenre(group){
         iY=0;
     }
 
+    var lines = group.append("line")
+        .attr("x1", placeX)
+        .attr("y1", placeY)
+        .attr("x2",350)
+        .attr("y2",400)
+        .attr("stroke-width","1px")
+        .attr("stroke","#CFCFCF")
+    reset()
+
     var genres = group.append("circle")
         .attr("fill", mapGenre)
-        .attr("cx", placeX)
-        .attr("cy", placeY)
+        .attr("cx", placeLineX)
+        .attr("cy", placeLineY)
         .attr("r", 12)
-        .attr("stroke", "black")
-        .attr("stroke-width", "1px")
+        .attr("stroke", mapActivity)
+        .attr("stroke-width", "2px")
     reset()
 
     var circles = group.append("circle")
@@ -126,7 +135,7 @@ function groupByGenre(group){
         .attr("r", 5)
         .attr("fill", "transparent")
         .attr("stroke", mapActivity)
-        .attr("stroke-width", "1px")
+        .attr("stroke-width", "2px")
         .attr("center")
 
     reset()
@@ -142,20 +151,20 @@ function groupByActivity(group){
     function randomX(datapoint) {
         switch (datapoint.whatIWasDoing){
             case "Relaxing":
-                var min = Math.ceil(825);
-                var max = Math.floor(975);
+                var min = Math.ceil(850);
+                var max = Math.floor(900);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "Working":
-                var min = Math.ceil(1025);
-                var max = Math.floor(1175);
+                var min = Math.ceil(1050);
+                var max = Math.floor(1150);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "Thinking":
-                var min = Math.ceil(1225);
+                var min = Math.ceil(1300);
                 var max = Math.floor(1375);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "Doing chores":
-                var min = Math.ceil(1425);
-                var max = Math.floor(1575);
+                var min = Math.ceil(1500);
+                var max = Math.floor(1600);
                 return Math.floor(Math.random() * (max - min + 1)) + min
         }
     }
@@ -170,14 +179,22 @@ function groupByActivity(group){
         iX=30;
         iY=30;
     }
+    var lines = group.append("line")
+        .attr("x1", placeX)
+        .attr("y1", placeY)
+        .attr("x2",1225)
+        .attr("y2",400)
+        .attr("stroke-width","1px")
+        .attr("stroke","#CFCFCF")
+    reset()
 
     var genres = group.append("circle")
         .attr("fill", mapGenre)
-        .attr("cx", placeX)
-        .attr("cy", placeY)
+        .attr("cx", placeLineX)
+        .attr("cy", placeLineY)
         .attr("r", 12)
-        .attr("stroke", "black")
-        .attr("stroke-width", "1px")
+        .attr("stroke", mapActivity)
+        .attr("stroke-width", "2px")
     reset()
 
     var circles = group.append("circle")
@@ -206,7 +223,7 @@ function groupBySinging(group){
                 var max = Math.floor(1900);
                 return Math.floor(Math.random() * (max - min + 1)) + min
             case "No":
-                var min = Math.ceil(2000);
+                var min = Math.ceil(2100);
                 var max = Math.floor(2400);
                 return Math.floor(Math.random() * (max - min + 1)) + min
         }
@@ -223,13 +240,26 @@ function groupBySinging(group){
         iY=60;
     }
 
+    function drawlines(){
+
+    }
+
+    var lines = group.append("line")
+        .attr("x1", placeX)
+        .attr("y1", placeY)
+        .attr("x2",2000)
+        .attr("y2",450)
+        .attr("stroke-width","1px")
+        .attr("stroke","#CFCFCF")
+    reset()
+
     var genres = group.append("circle")
         .attr("fill", mapGenre)
-        .attr("cx", placeX)
-        .attr("cy", placeY)
+        .attr("cx", placeLineX)
+        .attr("cy", placeLineY)
         .attr("r", 12)
-        .attr("stroke", "black")
-        .attr("stroke-width", "1px")
+        .attr("stroke", mapActivity)
+        .attr("stroke-width", "2px")
     reset()
 
     var circles = group.append("circle")
@@ -253,28 +283,28 @@ function groupBySinging(group){
 function mapGenre(datapoint){
     switch (datapoint.genre){
         case "Rock":
-            return "red"
+            return "#f72585"
         case "Pop":
-            return "pink"
+            return "#7209B7"
         case "Hip Hop":
-            return "purple"
+            return "#480CA8"
         case "Reggae":
-            return "brown"
+            return "#3A0CA3"
         case "Disco":
-            return "magenta"
+            return "#18055f"
     }
 }
 
 function mapActivity(datapoint){
     switch (datapoint.whatIWasDoing){
         case "Relaxing":
-            return "yellow"
+            return "#3F37C9"
         case "Working":
-            return "orange"
+            return "#4361EE"
         case "Thinking":
-            return "green"
+            return "#4895EF"
         case "Doing chores":
-            return "cyan"
+            return "#4CC9F0"
     }
 }
 let xs = [];
@@ -284,7 +314,7 @@ let iY = 0;
 
 function placeY(){
     let min = Math.ceil(50);
-    let max = Math.abs(300);
+    let max = Math.abs(250);
     iX+=1
     let result = Math.floor(Math.random() * (max - min + 1)) + min
     ys.push(result)
@@ -313,6 +343,18 @@ function placeSangY(){
     var ogY = ys[iY];
     iY+=1
     return ogY-10;
+}
+
+function placeLineX() {
+    var ogX = xs[iX];
+    iX+=1;
+    return ogX;
+}
+
+function placeLineY(){
+    var ogY = ys[iY];
+    iY+=1
+    return ogY;
 }
 
 function getSangIt(datapoint){

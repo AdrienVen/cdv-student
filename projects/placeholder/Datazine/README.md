@@ -8,3 +8,5 @@ In this project I encountered
 ![middle](Datazin-Middle.jpg)
 ![back](Datazine-Back.jpg)
 
+Find my completed work [here](/datazine-template/)
+

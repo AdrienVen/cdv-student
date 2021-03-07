@@ -7,38 +7,11 @@ createNotes();
 
 let group = viz.append("g")
 let image = group.append("image")
-    .attr("xlink:href","./assets/ear.jpg")
-    .attr("x", -400)
-    .attr("y",25)
-    .attr("width", innerWidth*1.3)
+    .attr("xlink:href","./assets/Digitized_Cover.jpg")
+    .attr("x", -150)
+    .attr("y",10)
+    .attr("width", innerWidth)
     .attr("height", innerHeight);
-
-let note4 = group.append("use")
-    .attr("x", 675)
-    .attr("y", 600)
-    .attr("xlink:href","#note3")
-    .attr("stroke", "black")
-    .attr("id", "n3")
-
-let note = group.append("use")
-    .attr("x", 600)
-    .attr("y", 525)
-    .attr("xlink:href","#note1")
-    .attr("stroke", "black")
-
-let note2 = group.append("use")
-    .attr("x", 435)
-    .attr("y", 475)
-    .attr("xlink:href","#note2")
-    .attr("stroke", "black")
-    .attr("id", "n2")
-
-let note3 = group.append("use")
-    .attr("x", 325)
-    .attr("y", 400)
-    .attr("xlink:href","#note3")
-    .attr("stroke", "black")
-    .attr("id", "n3")
 
 function createNotes() {
     let note1 = defs.append("g")
