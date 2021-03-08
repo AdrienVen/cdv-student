@@ -6,4 +6,4 @@ and
 - learned things
 ...
 
-See my work [here](https://leoneckert.github.io/cdv-student/projects/placeholder/Datazine/). (note this link goes to GitHub Pages, the *public* face of this project)
+See my work [here](https://leoneckert.github.io/cdv-student/projects/placeholder/Datazine/README.md). (note this link goes to GitHub Pages, the *public* face of this project)

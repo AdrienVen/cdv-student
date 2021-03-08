@@ -1,4 +1,4 @@
-#[Adrien's Datazine](https://adrienven.github.io/cdv-student/projects/placeholder/Datazine/datazine-template/index.html)
+#[Adrien's Datazine](https://adrienven.github.io/cdv-student/projects/placeholder/Datazine/datazine-template/cover.html)
 
 [](Cover.png)
 ##For my Datazine project,
