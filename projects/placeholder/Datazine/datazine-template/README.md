@@ -1,6 +1,6 @@
 #[Adrien's Datazine](https://adrienven.github.io/cdv-student/projects/placeholder/Datazine/datazine-template/cover.html)
 
-[](Cover.png)
+![](Cover.png)
 ##For my Datazine project,
 I decided to keep track of all the songs I ended up thinking about or singing.
 I did so by creating a google form where I recorded the song's name/artist, the genre of the song,
@@ -9,7 +9,7 @@ what I was doing at the time and whether I sang it or not.
 ##To me,
 once an earworm has wriggled its way into my head, it's as if it becomes part of my imagination,
 forever tethered to my brain until I need, (or want!) to pull that song from up there and give it sound or thought.
-[](Middle.png)
+![](Middle.png)
 ##In the visualization,
 you will notice that my favorite genres are Pop and Hip Hop, which isn't all that surprising
 considering they represent the biggest part of the music I listen to. One interesting take away however,
@@ -26,4 +26,4 @@ out how to work the spotify API to do so, but sadly ran out of time to implement
 
 In addtion, I think organizing the songs in a force graph and allowing a visitor to create playlists from the different
 organizations (genre, activity, singing), would have been really interesting!
-[](Back.png)
+![](Back.png)
