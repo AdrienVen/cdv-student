@@ -14,18 +14,16 @@ def digitize(array):
     for i in range(len(array)):
         for j in range(len(array[i])):
             color = array[i,j]
-            if color <= 51:
-                array[i,j] = 255
                 
-            elif color <= 122:
-                array[i,j] = 230
+            if color <= 122:
+                array[i,j] = 255
                 
             else:
                 array[i,j] = 0
     return array
     
     
-path = "C:\\Users\\adven\\Desktop\\Crit. Data\\cdv-student\projects\placeholder\Datazine\datazine-template\\assets\Legend.jpg"
+path = "C:\\Users\\adven\\Desktop\\Crit. Data\\cdv-student\projects\placeholder\Datazine\datazine-template\\assets\Middle.jpg"
 img = Image.open(path)
 img = img.copy()
 gray_img = ImageOps.grayscale(img)
