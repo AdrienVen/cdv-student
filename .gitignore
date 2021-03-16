@@ -189,3 +189,4 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/vim,osx,node,windows
 /coding-exercises/placeholder/.idea/
 /.idea/
+/coding-exercises/Exercise5/rosling-start.zip
