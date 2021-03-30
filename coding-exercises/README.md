@@ -10,3 +10,5 @@ all the work I have done in a neat, organized list.
 [Exercise 3](Exercise3/)
 
 [Exercise 4](Exercise4/)
+
+[Exercise 6](Exercise6/lab7-start/index.html)
