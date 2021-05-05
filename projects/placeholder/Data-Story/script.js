@@ -187,22 +187,17 @@ d3.csv("research/Meteorite-Landings.csv").then(function(landings){
             function findSimilar(meteoriteClass){
                 viz3.selectAll("sightings")
                     .data(landings.filter(function(d){
-                        console.log(d.recclass)
-                        if (d.recclass.includes(meteoriteClass)){
-
-                        }
                         return d.recclass.includes(meteoriteClass);}))
                     .enter()
-                    .append("circle")
-                    .attr("cx", function(d){
-                        let x = projection([d.lat, d.long])[1]
-                        return x
+                    .append('path')
+                    .attr('d', function(d){
+                        let finds = projection([d.reclat,d.reclong]);
+                        circle2 = d3.geoCircle()
+                            .center(finds)
+                            .radius(1);
+                        return generator(circle2());
                     })
-                    .attr("cy", function(d){
-                        let y = projection([d.lat, d.long])[0]
-                        return y
-                    })
-                    .attr("r", 5)
+                    .attr("class","sightings")
                     .attr("fill","blue")
             }
 
@@ -226,7 +221,7 @@ d3.csv("research/Meteorite-Landings.csv").then(function(landings){
                     .attr("fill","black")
                     .attr("y", 600)
                     .text("Closest high selling meteorite: "+ closest.Name + " meteorite. Highlighting similar meteorite sightings in blue!");
-                findSimilar(closest.class)
+                findSimilar(closest.Class)
             }
 
             viz_group.on("click", function(event, d){
@@ -238,11 +233,9 @@ d3.csv("research/Meteorite-Landings.csv").then(function(landings){
                     .radius(1);
                 viz3.select("#location").remove()
                 viz3.select("#close").remove()
-                viz3.selectAll("sightings").remove()
-                viz3
-                    .append('path')
+                viz3.selectAll(".sightings").remove()
+                viz3.append('path')
                     .attr('d', function(d){
-                        console.log()
                         return generator(circle());
                     })
                     .attr("fill","red")
