@@ -1,6 +1,6 @@
 # SPACE DATASET!
 
-![](source.gif)
+![](Presentation/source.gif)
 
 I managed to get my hands on a dataset which lists the various Meteorite landings
 since 1880. I could see myself building an interactive earth model 
@@ -9,7 +9,7 @@ or even the energy it had!
 
 ## GDP Per Capita $$$
 
-![](rich.gif)
+![](Presentation/rich.gif)
 
 I found a dataset from the worldbank organization which contains
 the gdp per capita of many countries since 1990. This could be used
