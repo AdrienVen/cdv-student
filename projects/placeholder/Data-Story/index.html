@@ -4,47 +4,39 @@
     <meta charset="UTF-8">
     <title>Meteorite Hunters</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="text-align: center; background-color: black; color: #F2E0D5">
-    <h1 id="intro"> Welcome to the Meteorite Hunter training program! </h1>
-    <div style="text-align: right; width: 75%">
-        <img src="images/chase.gif" width="900"/>
-        <p id="creds">Image credits: Kōichirō Itō; Katsuhiro Takei, <i>Your Name</i>, 2016 </p>
-    </div>
-
-    <p> So, you've decided to track down space rocks and sell them for a living eh? </p>
-    <p> Well this website is going to equip you with the basic tools and knowledge you need to start finding, and trading meteorites for cold, hard cash! </p>
-
-    <h1 id="industry"> The Industry </h1>
-    <h3> Overview </h3>
-    <p> History of meteorite selling and facts about the current state of the industry</p>
-    <h3> The World's Meteorite Hubs </h3>
-    <div id="hubs">
-
-    </div>
-    <h1 id="meteorites"> The Product </h1>
-        <h3> Meteorites are like opinions: Some are much more valuable than others!</h3>
-
-        <div id="prices">
-
+    <div id="intro" class="main-div">
+        <h1> Welcome to the Meteorite Hunter training program! </h1>
+        <h4 id="creds">Image credits: Kōichirō Itō; Katsuhiro Takei, <i>Your Name</i>, 2016 </h4>
+        <div id="goal">
+            <p> You've decided to hunt space rocks for a living. </p>
+            <p> This website will equip you with the knowledge you need to start finding, and trading meteorites! </p>
         </div>
-        <p> The 9 highest selling meteorites and their sale price, in thousands of US dollars</p>
-
-        <p> A meteorite's sale price is mostly dependent on its composition and the mass of the Rock you are selling. </p>
-        <p> The most prized rocks apparently belong to the Pallasite class. </p>
-        <div id="breakdown">
-
-        </div>
-    <h3> Fantastic Rocks and where to find them </h3>
-    <p> General guidelines for finding meteorites in a safe and legal manner </p>
-    <div id="locator">
 
     </div>
+    <div id="hubs" class="main-div">
+        <h1 id="industry"> The Industry </h1>
+        <p> The meteorite trading business is organized around 4 central hubs.
+        <br/> Click on a rectangle to reveal the Hub and see the profiles of two meteorite hunters!
+        <br/> Hover over their pictures for quick facts about them. </p>
+    </div>
 
+    <div id="prices" class="main-div">
+        <h1 id="meteorites"> The Product </h1>
+        <p> The 9 highest selling meteorites and their sale price, in thousands of US dollars.</p>
+        <div id="explanation">
+            <p> A meteorite's sale price is mostly dependent on its composition and the mass of the Rock you are selling. </p>
+            <p> The most prized rocks apparently belong to the Pallasite class. </p>
+        </div>
+    </div>
 
-    <p> Tool identifying the closest high-selling meteorite to a chosen location and showing where similar meteorites were be found. </p>
-    <div id="meteor-svg"></div>
-    <div id="earth-svg"></div>
+    <div id="locator" class="main-div">
+        <h1> Fantastic Rocks and where to find them </h1>
+        <p> Click anywhere on the globe to find the closest high-selling meteorite <br/> and reveal where similar meteorites were found! </p>
+
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

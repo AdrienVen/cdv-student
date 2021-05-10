@@ -1,5 +1,5 @@
-Name,Lat,Long
-Tucson City,32.2226,-110.9747
-Erfoud,31.4366,-4.2344
-Nanjing,32.0603,118.7969
-Ensisheim,47.8659,7.3518
+Name,Lat,Long,country,image,desc
+Tucson City,32.2226,-110.9747,U.S.,https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/tucson-overview_3ce490d7a910257e724bc5c690f6db49.png,"Located just east of the Sonoran desert, Tucson Arizona has been a place of gathering and exchange for meteorite hunters for quite some time. It is known in the meteorite community for hosting the Tucson Mineral and Gems show,  by far the largest meteorite trading event in the world.  The desert environment being suited for meteorite hunting, and the American South being historically associated with space and astronomy were all factors in making this town the meteorite capital of the United States."
+Erfoud,31.4366,-4.2344,Morocco,https://i.pinimg.com/originals/c3/a4/a6/c3a4a66c13bbe070d9f06f6de6482894.jpg,"A small Tourist town on the Eastern fringe of Morocco. Situated just before the Erg Chebbi dunes, Erfoud is a small city of 23,000 people. Its proximity to the vast desert has earned it the nickname of ""Gate of the Sahara"". The town's main attractions include the Royal Palace, the Souk, which is a typical Arab marketplace, but people are increasingly drawn to the city to find fossils and meteorites (source)"
+Nanjing,32.0603,118.7969,China,http://img2.chinadaily.com.cn/images/201906/14/5d02795ca3103dbf57a477c5.jpeg,"Nanjing, one of China's most famous cities, is home to the Purple Mountain Observatory, a national leader in the study of space and meteorites. Many Chinese meteorite hunters have ties to the Observatory, and used to rely on its personnel to appraise and identify rocks. In recent years, as the meteorite trade exploded, the Observatory has stopped taking appraisal requests from non-affiliated people."
+Ensisheim,47.8659,7.3518,France,https://cdn-s-www.lalsace.fr/images/BA8B16DC-D1D8-4071-9B72-F381D4E7CD2E/MF_contenu/ensisheim-entre-deux-rives-1426188377.jpg,
