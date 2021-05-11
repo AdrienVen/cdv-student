@@ -1,28 +1,22 @@
-# SPACE DATASET!
+# [Meteorites: The New Goldrush!?](https://adrienven.github.io/cdv-student/projects/placeholder/Data-Story/index.html)
+![](images/locator.gif)
 
-![](Presentation/source.gif)
+## 2.057 million dollars.
+That's how much the Fukang meteorite, one of the largest Pallasite Meteorites found on Earth sold for.
+The space rock is a harbinger of a network of hunters, traders and hubs which deal in the collection,
+and selling of meteorites for ... astronomical prices. By [pulling information from various articles](https://docs.google.com/spreadsheets/d/1jNY-OhmdoZfAS8rDmqn9wQOl3BCzC2ty-HyoNN8oS10/edit?usp=sharing) and 
+[one dataset from NASA](https://www.kaggle.com/nasa/meteorite-landings), this website sets you on a meteoritic path to finding your first high-selling piece of space.
 
-I managed to get my hands on a dataset which lists the various Meteorite landings
-since 1880. I could see myself building an interactive earth model 
-allowing you to see where the meteorite landed, or view data about it such as its mass,
-or even the energy it had!
+# About the viz
+Having to deal with with multiple locations on earth, it was really important for me that
+the viewer gets a good idea of where each location is in relation to each other. How spread out
+and international the meteorite hunting business really is. This is why the maps, both rectangular
+and the globe were chosen, as user can tell at a glance how diverse the locations (and people!) are.
 
-## GDP Per Capita $$$
 
-![](Presentation/rich.gif)
-
-I found a dataset from the worldbank organization which contains
-the gdp per capita of many countries since 1990. This could be used
-for some interesting visualization a la Exercise 5 of how the nations
-gdp per capita has increased, or how the gap between countries
-has widened. I could think of creative ways of representing this,
-such as scaled stacks of bills for example!
-
-## Moma Artworks Dataset
-
-![](painting.gif)
-
-A dataset listing more than 15K artworks along with their artist, date,
-medium and nationality. Here I am thinking of maybe comparing different
-periods / countries in terms of art output, maybe even play a little bit
-with the artwork thumbnails with some trusty Python software!
+The Visualizations show that meteorites are mostly found in remote or desert-like regions, which I think
+makes sense given how relatively easy it is to forage for them in those kinds of areas. They also show that buyers have
+a preference for three types of meteorites: Pallasite, Lunar and Iron meteorites. One compromise I've had to make
+was to give up on placing all the descriptions I wrote in the visualizations. The hubs already use enough tooltips,
+and I feared any more text would lose the viewer. Finally if I had more time I'd dedicate it to giving the
+website a more space-like feel: maybe with some twinkling stars and passing asteroids!
